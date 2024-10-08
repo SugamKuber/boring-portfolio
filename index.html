@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sugam Kuber
-        <> Boring Portfolio</title>
+    <title>Sugam Kuber <> Boring Portfolio</title>
     <script>
         window.va = window.va || function() {
             (window.vaq = window.vaq || []).push(arguments);
@@ -19,49 +18,52 @@
             popup.classList.add('scale-100', 'opacity-100');
         });
     </script>
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <div class="flex flex-col items-center text-center py-6">
-        <h1 class="text-2xl font-bold mb-2">Finally you've discovered my website.</h1>
-        <h2 class="text-xl font-semibold mb-6">Whether you're human or bot, I'm happy to have you here!</h2>
-        <div class="transform scale-95 opacity-0 transition-all duration-1000 ease-out" id="popup">
-            visitor +1, HEHE Thanks
-        </div>
+<body class="bg-gray-100">
+    <div class="flex flex-col items-center text-center py-10">
+        <h1 class="text-2xl font-bold mb-4 tracking-tight">Finally you've discovered my website.</h1>
+        <h2 class="text-xl font-medium mb-8 tracking-wide">Whether you're human or bot, I'm happy to have you here!</h2>
     </div>
-    <div class="flex justify-center ">
-        <img src="assets/profile.jpg" alt="profile" class="rounded-full shadow-lg w-32">
+    <div class="flex justify-center mb-8">
+        <img src="assets/profile.jpg" alt="profile" class="rounded-full shadow-lg w-40 border-4 border-white">
     </div>
-    <div class="flex justify-center">
+    <div class="flex justify-center mb-10">
         <div class="flex flex-col items-center">
-            <div>SUGAM KUBER</div>
-            <div class="flex items-center">
-                <img src="https://i.pinimg.com/736x/7c/d3/1e/7cd31e8d07402a2a01a296f647eb261a.jpg" alt="logo" class="w-4">
-                <span class="ml-2">Bengaluru, India</span>
+            <div class="text-4xl font-semibold mb-2">SUGAM KUBER</div>
+            <div class="flex items-center mb-2">
+                <img src="https://i.pinimg.com/736x/7c/d3/1e/7cd31e8d07402a2a01a296f647eb261a.jpg" alt="logo" class="w-5">
+                <span class="ml-2 text-lg">Bengaluru, India</span>
             </div>
-            <div>
+            <div class="text-xl font-light tracking-widest">
                 DEVOPS | BLOCKCHAIN | BACKEND | SECURITY
             </div>
         </div>
     </div>
 
-    <nav class="mt-10 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4">
-        <button onclick="location.href='about.html'" class="px-5 bg-gray-200 border-2 text-sm border-black rounded-xs text-center">About</button>
-        <button onclick="location.href='education.html'" class="px-5 bg-gray-200 border-2 text-sm border-black rounded-xs text-center">Education</button>
-        <button onclick="location.href='experience.html'" class="px-5 bg-gray-200 border-2 text-sm border-black rounded-xs text-center">Experience</button>
-        <button onclick="location.href='work.html'" class="px-5 bg-gray-200 border-2 text-sm border-black rounded-xs text-center">Work</button>
-        <button onclick="location.href='etc.html'" class="px-5 bg-gray-200 border-2 text-sm border-black rounded-xs text-center">ETC</button>
+    <nav class="mt-10 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+        <button onclick="location.href='about.html'" class="px-6 py-2 bg-gray-200 border-2 text-base border-black rounded-md text-center font-medium transition duration-300 ease-in-out hover:bg-gray-300">About</button>
+        <button onclick="location.href='education.html'" class="px-6 py-2 bg-gray-200 border-2 text-base border-black rounded-md text-center font-medium transition duration-300 ease-in-out hover:bg-gray-300">Education</button>
+        <button onclick="location.href='experience.html'" class="px-6 py-2 bg-gray-200 border-2 text-base border-black rounded-md text-center font-medium transition duration-300 ease-in-out hover:bg-gray-300">Experience</button>
+        <button onclick="location.href='work.html'" class="px-6 py-2 bg-gray-200 border-2 text-base border-black rounded-md text-center font-medium transition duration-300 ease-in-out hover:bg-gray-300">Work</button>
+        <button onclick="location.href='etc.html'" class="px-6 py-2 bg-gray-200 border-2 text-base border-black rounded-md text-center font-medium transition duration-300 ease-in-out hover:bg-gray-300">ETC</button>
     </nav>
-    <nav class="mt-10 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4">
-        <a href="https://twitter.com/sugamkuber" class="text-sm text-blue-700 underline">twitter</a>
-        <a href="https://www.linkedin.com/in/sugamkuber" class="text-sm text-blue-700 underline">linkedin</a>
-        <a href="mailto:sugamkuber@gmail.com" class="text-sm text-blue-700 underline">mail</a>
-        <a href="https://topmate.io/sugamkuber" class="text-sm text-blue-700 underline">topmate</a>
-        <a href="https://github.com/sugamkuber" class="text-sm text-blue-700 underline">github</a>
+    <div class="text-center my-8 text-lg italic">
+        Never judge a backend guy with his frontend website, check out my below profiles
+    </div>
+    <nav class="my-10 flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-6">
+        <a href="https://twitter.com/sugamkuber" class="uppercase font-semibold text-blue-700 underline hover:text-blue-900 transition duration-300">twitter</a>
+        <a href="https://www.linkedin.com/in/sugamkuber" class="uppercase font-semibold text-blue-700 underline hover:text-blue-900 transition duration-300">linkedin</a>
+        <a href="mailto:sugamkuber@gmail.com" class="uppercase font-semibold text-blue-700 underline hover:text-blue-900 transition duration-300">mail</a>
+        <a href="https://topmate.io/sugamkuber" class="uppercase font-semibold text-blue-700 underline hover:text-blue-900 transition duration-300">topmate</a>
+        <a href="https://github.com/sugamkuber" class="uppercase font-semibold text-blue-700 underline hover:text-blue-900 transition duration-300">github</a>
     </nav>
-    <div class="text-center mt-5">
-       Website still In Progress....</div>
 </body>
 
 </html>
