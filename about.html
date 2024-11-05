@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +11,37 @@
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <script>
+const skills = {
+    "Programming Languages": ["JavaScript", "TypeScript", "Golang", "C/C++", "PHP", "Java", "Rust"],
+    "Frameworks & Libraries": ["React", "Node", "Express", "Next.js", "Redux", "Go Fiber", "Gin-Gonic", "GraphQL", "Sockets"],
+    "Cloud Platforms": ["AWS", "GCP", "Firebase", "Digital Ocean"],
+    "Databases": ["MongoDB", "PostgreSQL", "MySQL", "Cassandra", "CockroachDB"],
+    "DevOps & Tools": ["Docker", "Git", "Kubernetes", "CI/CD", "Linux", "Nginx", "Redis", "Jira", "Postman", "Selenium", "VM", "Bash", "draw.io"],
+    "Blockchain Technologies": ["Solidity", "Web3.js", "Ethers", "Hardhat", "Infura", "Moralis", "Alchemy", "IPFS"],
+    "Learning": ["Jenkins", "gRPC", "rabbitMQ", "Kafka", "Solana"],
+    "Additional Skills": ["Prisma", "React-Query", "Tailwind CSS", "CSS Frameworks", "PineScript"]
+};
+        function renderSkills() {
+            const container = document.getElementById("skills-container");
+            for (const [category, items] of Object.entries(skills)) {
+                const section = document.createElement("div");
+                section.className = "mb-8";
+                section.innerHTML = `
+                    <h3 class="text-lg font-semibold mb-3">${category}</h3>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        ${items.map(item => `
+                            <span class="bg-gray-100 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-200 transition-colors duration-200">${item}</span>
+                        `).join('')}
+                    </div>
+                `;
+                container.appendChild(section);
+            }
+        }
 
+        window.onload = renderSkills;
+    </script>
+</head>
 <body>
     <nav class="mt-10 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
         <button onclick="location.href='index.html'" class="px-6 py-2 bg-gray-200 border-2 text-base border-black rounded-md text-center font-medium transition duration-300 ease-in-out hover:bg-gray-300">Home</button>
@@ -24,5 +52,11 @@
     </nav>
     <div class="flex flex-col items-center text-center py-10">
         <h1 class="text-2xl font-bold mb-4 tracking-tight">Sugam Kuber <> About</h1>
-    <div class="container mx-auto px-4 flex flex-col items-center">
+        <div class="container mx-auto px-4 max-w-4xl">
+            
+            <h2 class="text-2xl font-bold mb-6 text-center">Technical Arsenal</h2>
+            <div id="skills-container"></div>
+        </div>
+    </div>
 </body>
+</html>
