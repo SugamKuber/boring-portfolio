@@ -13,25 +13,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
 const skills = {
-    "Programming Languages": ["JavaScript", "TypeScript", "Golang", "C/C++", "PHP", "Java", "Rust"],
-    "Frameworks & Libraries": ["React", "Node", "Express", "Next.js", "Redux", "Go Fiber", "Gin-Gonic", "GraphQL", "Sockets"],
-    "Cloud Platforms": ["AWS", "GCP", "Firebase", "Digital Ocean"],
-    "Databases": ["MongoDB", "PostgreSQL", "MySQL", "Cassandra", "CockroachDB"],
-    "DevOps & Tools": ["Docker", "Git", "Kubernetes", "CI/CD", "Linux", "Nginx", "Redis", "Jira", "Postman", "Selenium", "VM", "Bash", "draw.io"],
-    "Blockchain Technologies": ["Solidity", "Web3.js", "Ethers", "Hardhat", "Infura", "Moralis", "Alchemy", "IPFS"],
-    "Learning": ["Jenkins", "gRPC", "rabbitMQ", "Kafka", "Solana"],
-    "Additional Skills": ["Prisma", "React-Query", "Tailwind CSS", "CSS Frameworks", "PineScript"]
+    "Programming Languages": ["Golang", "TypeScript", "Rust", "C", "PHP","C++"],
+    "Frameworks & Libraries": ["React", "Node", "Express", "Next","Nest", "Go-Fiber", "Gin-Gonic", "Go-Iris"],
+    "Cloud Platforms": ["AWS", "GCP", "Azure", "Firebase", "Digital Ocean","Linode"],
+    "Databases": ["MongoDB", "PostgreSQL", "Redis", "Scylla", "LevelDB", "MySQL", "Cassandra", "CockroachDB", "Neo4j", "DynamoDB"],
+    "DevOps Tools": ["Docker", "Git", "Kubernetes", "CI/CD", "Jenkins", "CircleCI", "AgroCD", "Linux", "Nginx", "Postman", "Selenium", "Terraform","Pulumi", "Ansible", "Puppet", "Chef","Prometheus","Grafana","Datadog"],
+
+    "Blockchain Technologies": ["Solidity", "Web3.js", "Ethers", "Hardhat", "Truffle", "Ganache", "Infura", "Moralis", "Alchemy", "IPFS", "Solana", "Tron", "Ethereum","Polygon","Cosmos"],
+
+    "Learning": ["gRPC", "rabbitMQ", "Kafka", "Kubernetes (Advanced)","Helm"],
+
+    "Additional Skills": ["Prisma", "React-Query", "Tailwind CSS", "PineScript"],
+    "stuff world doesnt use":["Podman", "gVisor", "Firecracker","Hyper-V"]
 };
         function renderSkills() {
             const container = document.getElementById("skills-container");
             for (const [category, items] of Object.entries(skills)) {
                 const section = document.createElement("div");
-                section.className = "mb-8";
+                section.className = "mb-3";
                 section.innerHTML = `
-                    <h3 class="text-lg font-semibold mb-3">${category}</h3>
+                    <h3 class="text-sm font-semibold mb-1">${category}</h3>
                     <div class="flex flex-wrap gap-2 justify-center">
                         ${items.map(item => `
-                            <span class="bg-gray-100 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-200 transition-colors duration-200">${item}</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-sm font-medium hover:bg-gray-200 transition-colors duration-200">${item}</span>
                         `).join('')}
                     </div>
                 `;
@@ -52,9 +56,16 @@ const skills = {
     </nav>
     <div class="flex flex-col items-center text-center py-10">
         <h1 class="text-2xl font-bold mb-4 tracking-tight">Sugam Kuber <> About</h1>
-        <div class="container mx-auto px-4 max-w-4xl">
-            
-            <h2 class="text-2xl font-bold mb-6 text-center">Technical Arsenal</h2>
+        <div>
+            ✅ Backend Development <br/>
+            ✅ Core Systems Development <br/>
+            ✅ Devops <br/>
+            ✅ Blockchain <br/>
+            Thats it Im good at, Not AI/ML, Not Data Science <br/>
+            Learning security and how to scale unreal engine infra
+
+        </div>
+        <div class="mt-10 container mx-auto px-4 max-w-4xl">
             <div id="skills-container"></div>
         </div>
     </div>
